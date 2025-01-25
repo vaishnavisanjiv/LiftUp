@@ -1,0 +1,161 @@
+/* General styles */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212; /* Dark background */
+  color: #f0f0f0; /* Light text color */
+}
+
+header {
+  background-color: #0066cc; /* Blue background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 20px;
+}
+
+.question-section {
+  margin-bottom: 40px;
+}
+
+textarea {
+  width: 98%;
+  padding: 15px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #0e0e0f; /* Darker border */
+  border-radius: 5px;
+  resize: none;
+  background-color: #252729; /* Dark background */
+  color: #f0f0f0; /* Light text */
+  transition: border 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #0066cc; /* Blue focus border */
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 1%;
+  background-color: #00a5a5; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008080; /* Darker green on hover */
+}
+
+.questions-list {
+  background-color: #252729; /* Dark background for list */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  background-color: #2e3135; /* Dark gray for individual questions */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(88, 88, 88, 0.1);
+}
+
+.question h3 {
+  margin: 0;
+  color: #f0f0f0; /* Light text for titles */
+}
+
+.question p {
+  color: #b0b0b0; /* Lighter color for question text */
+}
+
+.answer {
+  background-color: #3a3a3a; /* Darker background for answers */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: #f0f0f0; /* Light text color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller text on smaller screens */
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .question-section {
+    margin-bottom: 30px;
+  }
+
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    width: 100%; /* Make button full width on small screens */
+  }
+
+  .questions-list {
+    padding: 15px;
+  }
+
+  .question {
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+
+  .answer {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph size for mobile */
+  }
+
+  .question-section {
+    margin-bottom: 20px;
+  }
+
+  .question h3 {
+    font-size: 1.2rem; /* Adjust question title size */
+  }
+
+  .question p {
+    font-size: 1rem; /* Adjust question text size */
+  }
+
+  .answer {
+    padding: 5px;
+  }
+
+  .questions-list {
+    padding: 10px;
+  }
+}

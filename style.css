@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif; /* Prevents repetition of the image */
+    background-color: #000; /* Fallback dark background */
+    color: #ffffff; /* Light text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative; /* To allow for overlay if needed */
+}
+
+
+
+.form-container {
+    background-color: #1e1e1e; /* Darker gray for the form container */
+    color: #ffffff; /* Light text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
+    width: 300px;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff; /* Light text */
+}
+
+input {
+    width: 93%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #333; /* Dark border */
+    border-radius: 4px;
+    background-color: #2a2a2a; /* Darker background for inputs */
+    color: #ffffff; /* Light text */
+    font-family: 'Raleway', sans-serif;
+}
+
+input::placeholder {
+    color: #bbbbbb; /* Subtle placeholder text color */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #124265; /* Dark blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+button:hover {
+    background-color: #0a2f4d; /* Darker blue on hover */
+}
+
+p {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff; /* Light text */
+}
+
+a {
+    color: #4CAF50; /* Light green for links */
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
