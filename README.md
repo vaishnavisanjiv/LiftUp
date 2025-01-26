@@ -40,3 +40,18 @@ LiftUp features an AI-powered chatbot that supports multiple languages, enabling
 
 ## Contributing
 Feel free to fork the repository and submit a pull request. Contributions are welcome!
+
+##Screenshots of project
+![Dashboard](https://github.com/user-attachments/assets/ecdaa377-d7b4-4dfc-b329-9ccd9274415d)
+
+![chatBot](https://github.com/user-attachments/assets/a788d2f1-c494-48c4-afe8-e2cbe7e980a5)
+
+![Dashboard1](https://github.com/user-attachments/assets/28bdc392-b7de-451c-8f61-9342baa60f1b)
+
+![Dashboard2](https://github.com/user-attachments/assets/b4f2a47e-02c1-425a-888f-33cfe1c41907)
+
+
+
+
+
+
