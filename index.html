@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="assets/img/logo.png" rel="icon">
     <style>
-        /* Custom Alert Box Styling */
+
         .alert-box {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            background-color: rgba(0, 0, 0, 0.5);
             display: none;
             justify-content: center;
             align-items: center;
@@ -69,7 +69,7 @@
         <p>Already have an account? <a href="login.html">Login here</a></p>
     </div>
 
-    <!-- Custom Alert Box -->
+
     <div id="custom-alert" class="alert-box">
         <div class="alert-content">
             <p id="alert-message"></p>
@@ -80,13 +80,13 @@
     <script type="module" src="scripts.js"></script>
 
     <script>
-        // Function to show custom alert box with the message
+        
         function showCustomAlert(message) {
             document.getElementById('alert-message').textContent = message;
             document.getElementById('custom-alert').style.display = 'flex';
         }
 
-        // Function to close the custom alert box
+    
         function closeAlert() {
             document.getElementById('custom-alert').style.display = 'none';
         }
