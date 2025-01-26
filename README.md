@@ -17,7 +17,7 @@ Access the live project at:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/LiftUp.git
+   git clone https://github.com/vaishnavisanjiv/LiftUp.git
    cd LiftUp
    ```
 
