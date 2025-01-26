@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-auth.js";
 
-// Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyD0DugBz8OXIth8hKzBDuTaZIapsrKEnfc",
   authDomain: "liftup-user-authentication.firebaseapp.com",
@@ -12,11 +12,11 @@ const firebaseConfig = {
   measurementId: "G-3DE9QHCR7P"
 };
 
-// Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-// Custom Alert Box (Reusable)
+
 function showCustomAlert(message) {
   document.getElementById('alert-message').textContent = message;
   document.getElementById('custom-alert').style.display = 'flex';
@@ -26,7 +26,7 @@ function closeAlert() {
   document.getElementById('custom-alert').style.display = 'none';
 }
 
-// Sign-Up Functionality
+
 document.getElementById("signUpForm")?.addEventListener("submit", (e) => {
     e.preventDefault();
     const email = document.getElementById("email").value;
@@ -35,17 +35,16 @@ document.getElementById("signUpForm")?.addEventListener("submit", (e) => {
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             showCustomAlert("User registered successfully!");
-            // Redirect to login page after a successful registration
             setTimeout(() => {
                 window.location.href = "login.html";
-            }, 1500); // Delay the redirect to show the alert
+            }, 1500); 
         })
         .catch((error) => {
             handleFirebaseError(error);
         });
 });
 
-// Login Functionality
+
 document.getElementById("loginForm")?.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -55,17 +54,16 @@ document.getElementById("loginForm")?.addEventListener("submit", (e) => {
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             showCustomAlert("Logged in successfully!");
-            // Redirect to LiftUp.html after successful login
             setTimeout(() => {
                 window.location.href = "LiftUp.html";
-            }, 1500); // Delay the redirect to show the alert
+            }, 1500); 
         })
         .catch((error) => {
             handleFirebaseError(error);
         });
 });
 
-// Handle Firebase errors and display custom error messages
+
 function handleFirebaseError(error) {
     let errorMessage = "An error occurred. Please try again.";
     
@@ -89,7 +87,7 @@ function handleFirebaseError(error) {
             errorMessage = "Invalid credential!";
             break;
         default:
-            errorMessage = error.message; // Default Firebase error message
+            errorMessage = error.message; 
     }
 
     showCustomAlert(errorMessage);
